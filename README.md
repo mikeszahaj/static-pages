@@ -11,8 +11,9 @@
 ## Run
 - `go build .`
 - `./static-pages`
+- Make requests to `http://localhost:8000/`
 
 ## Debug and Set Content
 All of these run from within a Redis prompt (`redis-cli`)
-- `monitor`: Watch incoming Redis commands
+- `monitor`: Watch incoming Redis commands to see which keys are being requested.
 - `set RedisWebContent::Lw== "Hello"`: Set content for page `/` to `Hello` (`Lw==` is `/` in Base64)
