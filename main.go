@@ -89,5 +89,3 @@ func main() {
 
 	log.Fatal(server.ListenAndServe())
 }
-
-// Socket.getifaddrs.select{|i| i.name == 'en0'}.first.addr.getnameinfo[0].gsub(':', '').to_i(16).to_s(36)
